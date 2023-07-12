@@ -1,7 +1,7 @@
 # Classificação de Câncer de Pele utilizando Deep Learning
 
 Trabalho de Topicos avançados em Machine Learning para Saude  <br>
-Professor : Flavio Seixas <br>
+Professor : Flavio Luiz Seixas - fseixas@ic.uff.br <br>
 Alunos : Adriano Lima e Souza -adrianoucam@gmail.com <br>
          Fernando Fernandes - fernando.fernandes2@gmai.com <br>
          
