@@ -70,30 +70,31 @@ O recall é o número de pessoas que o modelo identificou corretamente como tend
 # ROC
 
 As curvas ROC são criadas plotando-se a sensibilidade (verdadeiro positivo) no eixo y contra 1 − especificidade (verdadeiro negativo) no eixo x para cada valor encontrado em uma amostra de indivíduos com e sem a doença.
+Para 120 epocas <br>
 
  <img src="../Cancer de Pele/curva roc 120x.png">
 
-Recall
-Para 120 epocas
+# Recall <br>
+Para 120 epocas <br>
 [0.775      0.81666667]
 
 
-Precision Score
-Para 120 epocas
-[0.83532934 0.75153374]
-              precision    recall  f1-score   support
+# Precision Score
+Para 120 epocas <br>
+[0.83532934 0.75153374] <br>
+              precision    recall  f1-score   support <br>
+<br>
+           0       0.84      0.78      0.80       360 <br>
+           1       0.75      0.82      0.78       300 <br>
 
-           0       0.84      0.78      0.80       360
-           1       0.75      0.82      0.78       300
-
-#Acurácia
-Para 120 epocas
-Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente;
-    accuracy                           0.79       660
-   macro avg       0.79      0.80      0.79       660
-weighted avg       0.80      0.79      0.79       660
-
-
+# Acurácia
+Para 120 epocas <br>
+Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente; 
+    accuracy                           0.79       660 <br>
+   macro avg       0.79      0.80      0.79       660 <br>
+weighted avg       0.80      0.79      0.79       660 <br>
+<br>
+<br>
 # Foi utilizado Python 3.11
 Sobre os codigos fontes python
 ## classifica1.py
