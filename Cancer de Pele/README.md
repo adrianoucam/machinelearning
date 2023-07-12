@@ -37,8 +37,10 @@ Os dados consistem em imagens de câncer de pele divididas em duas classes: mali
 #Etapas de Pré-processamento dos Dados <br>
 ## As imagens são pré-processadas de acordo com as seguintes etapas: <br>
 <br>
-Normalização: As imagens de treinamento e teste são normalizadas dividindo cada pixel pelo valor máximo (255) para que fiquem no intervalo [0, 1]. <br>
-Aumento de Dados: As imagens de treinamento passam por um processo de aumento de dados (data augmentation) utilizando a classe ImageDataGenerator do Keras. Isso inclui rotação, zoom e deslocamento horizontal para   aumentar a variabilidade do conjunto de treinamento. <br>
+<b>Normalização:</b> As imagens de treinamento e teste são normalizadas dividindo cada pixel pelo valor máximo (255) para que fiquem no intervalo [0, 1]. <br>
+
+<b>Aumento de Dados:</b> As imagens de treinamento passam por um processo de aumento de dados (data augmentation) utilizando a classe ImageDataGenerator do Keras. <br>
+Isso inclui <b>rotação, zoom e deslocamento horizontal </b> para aumentar a variabilidade do conjunto de treinamento. <br>
 
 ## Modelo de Aprendizado de Máquina <br>
 O modelo de classificação de câncer de pele é construído utilizando o framework Keras com aprendizado profundo (Deep Learning). O modelo segue a seguinte arquitetura: <br>
