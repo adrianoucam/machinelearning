@@ -1,84 +1,36 @@
-
-Motivação
-Identificar utilizando Machine Learning com aprendizado profundo (Deep Learning) para classificar cancer de pele com base em imagens
+# Classificação de Câncer de Pele utilizando Deep Learning
+## Motivação
+Identificar utilizando Machine Learning com aprendizado profundo (Deep Learning) para classificar câncer de pele com base em imagens.
 
 O objetivo é criar um modelo de classificação de imagens para distinguir entre imagens benignas e malignas relacionadas ao câncer de pele.
 
-Descrição do Dataset
-https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign
+#Descrição do Dataset
+O dataset utilizado no projeto está disponível no Kaggle e pode ser encontrado no seguinte link: Skin Cancer: Malignant vs. Benign.
 
-Descrição dos dados
+#Descrição dos Dados
+Os dados consistem em imagens de câncer de pele divididas em duas classes: maligna e benigna. As imagens estão organizadas em duas pastas, uma para o conjunto de treinamento e outra para o conjunto de teste. Cada pasta contém subpastas separadas para as classes maligna e benigna.
 
-Etapas de preparação dos dados ou pré-processamento.
-As imagens estão disponiveis em 2 pastas
-Treinamento
-  +Maligno
-  +Benigno
-Teste
-  +Maligno
-  +Benigno
-
-Modelo de aprendizado de máquina
-
-Formalização matemática.
-Pré-processamento de Dados:
+#Etapas de Pré-processamento dos Dados
+## As imagens são pré-processadas de acordo com as seguintes etapas:
 
 Normalização: As imagens de treinamento e teste são normalizadas dividindo cada pixel pelo valor máximo (255) para que fiquem no intervalo [0, 1].
+Aumento de Dados: As imagens de treinamento passam por um processo de aumento de dados (data augmentation) utilizando a classe ImageDataGenerator do Keras. Isso inclui rotação, zoom e deslocamento horizontal para aumentar a variabilidade do conjunto de treinamento.
 
-Pré-processamento de Dados:
-   - As imagens de treinamento e teste são normalizadas dividindo-as pelo valor máximo de pixel (255).
-   - As imagens de treinamento passam por aumento de dados (data augmentation) usando a classe `ImageDataGenerator` do Keras. Isso inclui rotação, zoom e deslocamento horizontal.
+## Modelo de Aprendizado de Máquina
+O modelo de classificação de câncer de pele é construído utilizando o framework Keras com aprendizado profundo (Deep Learning). O modelo segue a seguinte arquitetura:
 
-Construção do Modelo:
+Camadas de Convolução 2D: As camadas de convolução 2D extraem características das imagens através de operações de convolução com filtros.
+Camadas de Max Pooling: As camadas de max pooling reduzem a dimensionalidade das características selecionando os valores máximos em regiões específicas.
+Camadas de Dropout: As camadas de dropout desativam aleatoriamente neurônios durante o treinamento para prevenir o overfitting.
+Camadas Densas: As camadas densas realizam a classificação final, sendo a última camada densa ativada pela função de ativação softmax para atribuir probabilidades às classes benigna e maligna.
+Compilação e Treinamento do Modelo
+Durante o treinamento, o modelo é compilado com o otimizador Adam e a função de perda Sparse Categorical Crossentropy. As métricas de acurácia e perda são registradas para monitorar o desempenho do modelo durante o treinamento. O número de épocas e os callbacks para registro de métricas de treinamento são definidos para ajustar o modelo.
 
-Construção do Modelo:
-   - O modelo de classificação de imagens é construído utilizando a classe `Sequential` do Keras.
-   - O modelo contém camadas de convolução (`Conv2D`), camadas de max pooling (`MaxPool2D`), camadas de dropout (`Dropout`), uma camada flatten (`Flatten`) e camadas densas (`Dense`).
-   - A última camada utiliza a função de ativação softmax para a classificação de duas classes (benigna e maligna).
+## Método de Validação
+O desempenho do modelo é avaliado utilizando dados de validação separados do conjunto de treinamento. A acurácia e a perda são registradas para avaliar a capacidade de generalização do modelo.
 
-Camadas de Convolução: O modelo utiliza camadas de convolução 2D para extrair características das imagens. Cada camada de convolução aplica uma operação de convolução em um conjunto de filtros para gerar mapas de características.
-Camadas de Max Pooling: As camadas de max pooling reduzem a dimensionalidade dos mapas de características, selecionando o valor máximo em uma região específica.
-Camadas de Dropout: As camadas de dropout ajudam a prevenir o overfitting, desligando aleatoriamente um percentual de neurônios durante o treinamento.
-Camadas Densas: As camadas densas são responsáveis por realizar a classificação final. A última camada densa utiliza a função de ativação softmax para atribuir probabilidades às classes benigna e maligna.
-Compilação e Treinamento do Modelo:
+## Resultados e Métricas de Desempenho
+Ao final do treinamento, os resultados são avaliados através de gráficos que mostram a acurácia e a perda do treinamento e validação em cada época. Essas métricas permitem avaliar a capacidade de aprendizado do modelo ao longo do treinamento.
 
-Otimizador Adam: O modelo é compilado com o otimizador Adam, que utiliza o algoritmo de otimização estocástica baseado em gradientes para ajustar os pesos da rede neural durante o treinamento.
-Função de Perda Sparse Categorical Crossentropy: A função de perda utilizada é a Sparse Categorical Crossentropy, que é adequada para problemas de classificação com múltiplas classes. Ela compara as probabilidades preditas pelo modelo com as classes reais e calcula a perda.
-Métricas de Avaliação: Durante o treinamento, são registradas as métricas de acurácia e perda tanto para o conjunto de treinamento quanto para o conjunto de validação.
-
-
-Método de validação.
-Compilação e Treinamento do Modelo:
-   - O modelo é compilado com o otimizador Adam e a função de perda `SparseCategoricalCrossentropy`.
-   - O modelo é treinado utilizando o método `fit`, passando os dados de treinamento e validação, o número de épocas e os callbacks para registro de métricas de treinamento.
-Medidas de desempenho.
-
-Avaliação
-
-Amostras usadas para treinamento, validação e teste.
-
-Medidas de desempenho.
-
-Conclusão
- - A acurácia e a perda do treinamento e validação são registradas durante o treinamento e plotadas em gráficos.
- - O modelo final é salvo em um arquivo.
-
-
-Bibliotecas Importadas:
-   - O código importa várias bibliotecas necessárias para a criação e treinamento do modelo de classificação, incluindo:
-     - `matplotlib.pyplot` e `seaborn` para visualização de dados e gráficos.
-     - `keras` para criação do modelo de rede neural.
-     - `sklearn.metrics` para métricas de avaliação do modelo.
-     - `tensorflow` para manipulação de tensores e execução do modelo.
-     - `cv2` para processamento de imagens utilizando OpenCV.
-     - `os` para manipulação de arquivos e diretórios.
-     - `numpy` para operações numéricas e manipulação de arrays.
-
-Funções Auxiliares:
-   - `get_data(data_dir)`: Essa função é responsável por carregar os dados de treinamento e teste. Ela percorre os diretórios fornecidos para cada classe (benigna e maligna), lê as imagens, redimensiona-as para um tamanho específico e as armazena em uma lista junto com as respectivas classes.
-   
-
-
-
-
-  
+## Conclusão
+Através do desenvolvimento e treinamento de um modelo de classificação de câncer de pele utilizando deep learning, foi possível criar um sistema capaz de distinguir entre imagens benignas e malignas. O modelo pode ser utilizado como uma ferramenta de apoio para auxiliar profissionais da área médica na detecção precoce e diagnóstico do câncer de pele.
