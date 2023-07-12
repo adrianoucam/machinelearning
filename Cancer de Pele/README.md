@@ -23,6 +23,8 @@ O objetivo é criar um modelo de classificação de imagens para distinguir entr
 #Descrição do Dataset <br>
 O dataset utilizado no projeto está disponível no Kaggle e pode ser encontrado no seguinte link: Skin Cancer: Malignant vs. Benign. <br>
 
+![](https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign)
+
 #Descrição dos Dados <br>
 Os dados consistem em imagens de câncer de pele divididas em duas classes: maligna e benigna. As imagens estão organizadas em duas pastas, uma para o conjunto de treinamento e outra para o conjunto de teste. Cada pasta contém subpastas separadas para as classes maligna e benigna. <br>
 <br>
