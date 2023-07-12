@@ -87,18 +87,27 @@ Para 120 epocas <br>
 
 # Precision Score
 Para 120 epocas <br>
-[0.83532934 0.75153374] <br>
-              precision    recall  f1-score   support <br>
-<br>
-           0       0.84      0.78      0.80       360 <br>
-           1       0.75      0.82      0.78       300 <br>
-<br>
+
+|[0.83532934 | 0.75153374] | <br>
+
+|  	| precision 	| recall 	| f1-score 	| support 	|
+|---	|---	|---	|---	|---	|
+| 0 	| 0.84 	| 0.78 	| 0.80 	| 360 	|
+| 1 	| 0.75 	| 0.82 	| 0.82 	| 300 	|
+|  	|  	|  	|  	|  	|
+   
+   
 # Acurácia
+Acurácia: indica uma performance geral do modelo. <br>
+Dentre todas as classificações, quantas o modelo classificou corretamente;  <br>
 <br>Para 120 epocas <br>
-Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente;  <br>
-    accuracy                           0.79       660 <br>
-   macro avg       0.79      0.80      0.79       660 <br>
-weighted avg       0.80      0.79      0.79       660 <br>
+
+|    accuracy |              |         |    0.79   |    660 |
+|-------------|--------------|---------|-----------|--------| 
+|   macro avg |      0.79    |   0.80  |    0.79   |    660 |
+|weighted avg |       0.80   |   0.79  |    0.79   |    660 |
+
+
 <br>
 <br>
 # Foi utilizado Python 3.11
