@@ -31,7 +31,7 @@ O desempenho do modelo é avaliado utilizando dados de validação separados do 
 
 ## Resultados e Métricas de Desempenho
 Ao final do treinamento, os resultados são avaliados através de gráficos que mostram a acurácia e a perda do treinamento e validação em cada época. Essas métricas permitem avaliar a capacidade de aprendizado do modelo ao longo do treinamento.
-![](/Cancer de Pele/Resultado2x.png)
+![](Cancer de Pele/resultado2x.png)
 
 ## Conclusão
 Através do desenvolvimento e treinamento de um modelo de classificação de câncer de pele utilizando deep learning, foi possível criar um sistema capaz de distinguir entre imagens benignas e malignas. O modelo pode ser utilizado como uma ferramenta de apoio para auxiliar profissionais da área médica na detecção precoce e diagnóstico do câncer de pele.
