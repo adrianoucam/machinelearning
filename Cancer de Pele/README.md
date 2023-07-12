@@ -35,3 +35,27 @@ Ao final do treinamento, os resultados são avaliados através de gráficos que 
 
 ## Conclusão
 Através do desenvolvimento e treinamento de um modelo de classificação de câncer de pele utilizando deep learning, foi possível criar um sistema capaz de distinguir entre imagens benignas e malignas. O modelo pode ser utilizado como uma ferramenta de apoio para auxiliar profissionais da área médica na detecção precoce e diagnóstico do câncer de pele.
+
+# AUC 
+O valor do AUC varia de 0,0 até 1,0 e o limiar entre a classe é 0,5. Ou seja, acima desse limite, o algoritmo classifica em uma classe e abaixo na outra classe. Quanto maior o AUC, melhor
+AUC: 0.7958333333333334
+
+# RECALL 
+O recall é o número de pessoas que o modelo identificou corretamente como tendo a doença dividido pelo número total de pessoas que realmente têm a doença nos seus dados. Ou seja, de todas as pessoas que ele poderia classificar como positivas, quantas ele acertou.
+
+Recall
+[0.775      0.81666667]
+
+
+Precision Score
+[0.83532934 0.75153374]
+              precision    recall  f1-score   support
+
+           0       0.84      0.78      0.80       360
+           1       0.75      0.82      0.78       300
+
+#Acurácia
+Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente;
+    accuracy                           0.79       660
+   macro avg       0.79      0.80      0.79       660
+weighted avg       0.80      0.79      0.79       660
