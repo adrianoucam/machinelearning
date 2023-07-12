@@ -75,8 +75,8 @@ O recall é o número de pessoas que o modelo identificou corretamente como tend
 
 # ROC
 
-As curvas ROC são criadas plotando-se a sensibilidade (verdadeiro positivo) no eixo y contra 1 − especificidade (verdadeiro negativo) no eixo x para cada valor encontrado em uma amostra de indivíduos com e sem a doença.
-Para 120 epocas <br>
+As curvas ROC são criadas plotando-se a sensibilidade (verdadeiro positivo) no eixo y contra 1 − especificidade (verdadeiro negativo) no eixo x para cada valor encontrado em uma amostra de indivíduos com e sem a doença.<br>
+Para 120 epocas <br> 
 
  <img src="../Cancer de Pele/curva roc 120x.png">
 
@@ -92,10 +92,10 @@ Para 120 epocas <br>
 <br>
            0       0.84      0.78      0.80       360 <br>
            1       0.75      0.82      0.78       300 <br>
-
+<br>
 # Acurácia
-Para 120 epocas <br>
-Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente; 
+<br>Para 120 epocas <br>
+Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente;  <br>
     accuracy                           0.79       660 <br>
    macro avg       0.79      0.80      0.79       660 <br>
 weighted avg       0.80      0.79      0.79       660 <br>
@@ -107,7 +107,7 @@ Sobre os codigos fontes python
 O arquivo criar os modelos de acordo com os parametros comentados acima 
 
 ## cancer_teste.py 
-Foi utilizada técnica de transfer learning para usar o aprendizado gravado
+Foi utilizada técnica de <b> transfer </b> learning para usar o aprendizado gravado <br>
 O arquivo utiliza o modelo criado para classificar os arquivos da pasta escolhida - onde gera uma saida PREDS  [ 0 / 1 ] 
 Onde :
 0 seria Benigno
