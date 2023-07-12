@@ -74,11 +74,12 @@ As curvas ROC são criadas plotando-se a sensibilidade (verdadeiro positivo) no 
  <img src="../Cancer de Pele/curva roc 120x.png">
 
 Recall
+Para 120 epocas
 [0.775      0.81666667]
 
 
 Precision Score
-
+Para 120 epocas
 [0.83532934 0.75153374]
               precision    recall  f1-score   support
 
@@ -86,7 +87,7 @@ Precision Score
            1       0.75      0.82      0.78       300
 
 #Acurácia
-
+Para 120 epocas
 Acurácia: indica uma performance geral do modelo. Dentre todas as classificações, quantas o modelo classificou corretamente;
     accuracy                           0.79       660
    macro avg       0.79      0.80      0.79       660
