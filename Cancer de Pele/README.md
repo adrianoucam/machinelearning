@@ -2,6 +2,16 @@
 ## Motivação
 Identificar utilizando Machine Learning com aprendizado profundo (Deep Learning) para classificar câncer de pele com base em imagens.
 
+### Exemplos de imagens
+ <img src="../Cancer de Pele/23.jpg">
+ Cancer Benigno
+
+
+<img src="../Cancer de Pele/6.jpg">
+  Cancer Maligno
+
+ 
+ 
 O objetivo é criar um modelo de classificação de imagens para distinguir entre imagens benignas e malignas relacionadas ao câncer de pele.
 
 #Descrição do Dataset
@@ -81,3 +91,39 @@ Acurácia: indica uma performance geral do modelo. Dentre todas as classificaç�
     accuracy                           0.79       660
    macro avg       0.79      0.80      0.79       660
 weighted avg       0.80      0.79      0.79       660
+
+
+# Foi utilizado Python 3.11
+Sobre os codigos fontes python
+## classifica1.py
+O arquivo criar os modelos de acordo com os parametros comentados acima 
+
+## cancer_teste.py 
+O arquivo utiliza o modelo criado para classificar os arquivos da pasta escolhida - onde gera uma saida PREDS  [ 0 / 1 ] 
+Onde :
+0 seria Benigno
+1 seria Maligno
+
+# Exemplo abaixo da saida
+C://ML_SAUDE//cancer_pele//Photos-001//IMG_20230704_094559.jpg <br>
+Lendo o arquivo  C://ML_SAUDE//cancer_pele//Photos-001//IMG_20230704_094559.jpg <br>
+Convertendo cor do arquivo  C://ML_SAUDE//cancer_pele//Photos-001//IMG_20230704_094559.jpg <br>
+(1944, 2592, 3)
+
+1/1 [==============================] - ETA: 0s <br>
+1/1 [==============================] - 0s 75ms/step <br>
+PREDS  [[1 0]] <br>
+<b> [0] </b>
+
+C://ML_SAUDE//cancer_pele//Photos-001//IMG_20230704_094610.jpg <br>
+Lendo o arquivo  C://ML_SAUDE//cancer_pele//Photos-001//IMG_20230704_094610.jpg <br>
+Convertendo cor do arquivo  C://ML_SAUDE//cancer_pele//Photos-001//IMG_20230704_094610.jpg <br>
+(1944, 2592, 3) <br>
+
+1/1 [==============================] - ETA: 0s <br>
+1/1 [==============================] - 0s 61ms/step <br>
+PREDS  [[0 1]] <br>
+<b> [1] Maligno Maligno </b> <br>
+
+
+
