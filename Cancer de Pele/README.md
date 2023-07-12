@@ -31,7 +31,21 @@ O desempenho do modelo é avaliado utilizando dados de validação separados do 
 
 ## Resultados e Métricas de Desempenho
 Ao final do treinamento, os resultados são avaliados através de gráficos que mostram a acurácia e a perda do treinamento e validação em cada época. Essas métricas permitem avaliar a capacidade de aprendizado do modelo ao longo do treinamento.
-![](Cancer de Pele/resultado2x.png)
+
+Execução 3 vezes (Epocas)
+ <img src="../Cancer de Pele/resultado2x.png">
+
+ Execução 5 vezes (Epocas)
+ <img src="../Cancer de Pele/resultado5x.png">
+
+ Execução 11 vezes (Epocas)
+ <img src="../Cancer de Pele/resultado11x.png">
+
+ Execução 120 vezes (Epocas)
+ <img src="../Cancer de Pele/resultado120x.png">
+
+ Execução 250 vezes (Epocas)
+ <img src="../Cancer de Pele/resultado251x.png">
 
 ## Conclusão
 Através do desenvolvimento e treinamento de um modelo de classificação de câncer de pele utilizando deep learning, foi possível criar um sistema capaz de distinguir entre imagens benignas e malignas. O modelo pode ser utilizado como uma ferramenta de apoio para auxiliar profissionais da área médica na detecção precoce e diagnóstico do câncer de pele.
@@ -42,6 +56,11 @@ AUC: 0.7958333333333334
 
 # RECALL 
 O recall é o número de pessoas que o modelo identificou corretamente como tendo a doença dividido pelo número total de pessoas que realmente têm a doença nos seus dados. Ou seja, de todas as pessoas que ele poderia classificar como positivas, quantas ele acertou.
+# ROC
+
+As curvas ROC são criadas plotando-se a sensibilidade (verdadeiro positivo) no eixo y contra 1 − especificidade (verdadeiro negativo) no eixo x para cada valor encontrado em uma amostra de indivíduos com e sem a doença.
+
+ <img src="../Cancer de Pele/curva roc 120x.png">
 
 Recall
 [0.775      0.81666667]
