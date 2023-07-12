@@ -1,9 +1,9 @@
 # Classificação de Câncer de Pele utilizando Deep Learning
 
-Trabalho de Topicos avançados em Machine Learning para Saude 
-Professor : Flavio Seixas 
-Alunos : Adriano Lima e Souza -adrianoucam@gmail.com
-         Fernando Fernandes - fernando.fernandes2@gmai.com
+Trabalho de Topicos avançados em Machine Learning para Saude  <br>
+Professor : Flavio Seixas <br>
+Alunos : Adriano Lima e Souza -adrianoucam@gmail.com <br>
+         Fernando Fernandes - fernando.fernandes2@gmai.com <br>
          
 ## Motivação
 Identificar utilizando Machine Learning com aprendizado profundo (Deep Learning) para classificar câncer de pele com base em imagens.
