@@ -26,6 +26,14 @@ O dataset utilizado no projeto está disponível no Kaggle e pode ser encontrado
 #Descrição dos Dados
 Os dados consistem em imagens de câncer de pele divididas em duas classes: maligna e benigna. As imagens estão organizadas em duas pastas, uma para o conjunto de treinamento e outra para o conjunto de teste. Cada pasta contém subpastas separadas para as classes maligna e benigna.
 
+<img src="../Cancer de Pele/train_grafico1.png">
+  TREINAMENTO - Imagens por tipo <br>
+
+<img src="../Cancer de Pele/test_grafico1.png">
+  TESTE - Imagens por tipo <br>
+  <br>
+  <br>
+  
 #Etapas de Pré-processamento dos Dados
 ## As imagens são pré-processadas de acordo com as seguintes etapas:
 
